@@ -7,15 +7,7 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
-            let message = document.createElement('p');
-            message.textContent = 'yay heheehehhe'; // Set text content
-            message.style.fontSize = '30px'; // Customize font size
-            message.style.textAlign = 'center';
-            message.style.marginTop = '20px';
-            message.style.color = '#000000'; // Pink color (customizable)
-
-            // Append the message below the cat GIF
-            document.body.appendChild(message);
+            document.getElementById('yayMessage').style.display = 'block';
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
